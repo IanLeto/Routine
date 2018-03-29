@@ -28,9 +28,12 @@ class IanTime():
 
     def time_type_check(self, *args):
         for type in args:
-            if not isinstance(type, (datetime.datetime, datetime.date, datetime.time)):
+            if not isinstance(
+                type,
+                (datetime.datetime,
+                 datetime.date,
+                 datetime.time)):
                 return False
-
 
     def checkout_str_type(self, *args):
         if not isinstance(args, str):
