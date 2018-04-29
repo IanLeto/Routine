@@ -22,3 +22,33 @@ class Invoice:
         self.id = id
         self.type = type
         self.amount = amount
+
+
+class ReceiveStuRequire():
+
+    def __init__(self):
+        BaseStu.__init__()
+
+
+class BaseStu():
+    '''
+        基础模型,年龄和类型
+        information 为请求带入
+    '''
+
+    def __init__(self, age=False, type=False, information=None):
+        self.age = age
+        self.type = type
+        self.information = information
+
+    '''
+        返回该对象的基本信息
+        __class__返回构造self时使用的最底层的类
+    '''
+
+    def __str__(self):
+
+        attr_list = [i for i in self.__dict__]
+
+        return '<%s => %s, "属性为:%s">' % (
+            self.__class__.__name__, self.__dict__, attr_list)
