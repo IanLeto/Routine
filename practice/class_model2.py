@@ -1,4 +1,5 @@
 
+import datetime
 def static_func_A():
     return 'class_model has been used'
 

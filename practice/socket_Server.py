@@ -67,3 +67,6 @@ while True:
         tcpCliSock.send(('[%s] 传入data为: %s' %(bytes(ctime(), 'utf-8'), data)).encode())
     tcpCliSock.close()
 tcpSerSock.close()
+
+if __name__ == '__main__':
+    main(module=None)
