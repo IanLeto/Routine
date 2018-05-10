@@ -12,4 +12,10 @@ class person():
 
     def func2(self):
         print(self.name)
+    print('xxxxxxxx')
 
+print('xxxx')
+
+
+a = 1
+b = person()
