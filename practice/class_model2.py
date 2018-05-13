@@ -1,5 +1,7 @@
 
 import datetime
+
+
 def static_func_A():
     return 'class_model has been used'
 
@@ -32,10 +34,18 @@ class ReceiveStuRequire():
 
 
 class BaseStu():
-    '''
+
+    """
+        类的基础属性
+        调用时间,db位置 等
+
+    """
+    his_time = datetime.datetime.today().strftime('%Y-%m-%d %H:%M:%S')
+    db = '还在筹划中'
+    """
         基础模型,年龄和类型
         information 为请求带入
-    '''
+    """
 
     def __init__(self, age=False, type=False, information=None):
         self.age = age
